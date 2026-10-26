@@ -1,0 +1,131 @@
+
+# Python environments and cache
+venv/
+.venv/
+vision/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Frontend dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Training outputs and generated artifacts
+vision/runs/
+runs/
+
+# Video files
+*.mp4
+*.avi
+*.mov
+
+# Dataset archives and extracted datasets
+datasets/
+dataset/
+vision/ambulance_clean/
+vision/ambulance_detection_v3/
+vision/ambulance_detection_v3_clean/
+vision/*.zip
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+
+# Extra model weights
+be454st.pt
+besttttt.pt
+vision/best_backup.pt
+vision/yolo26n.pt
+
+# Dataset inspection images
+vision/label_check.jpg
+vision/truck.jpg
+
+# Temporary screenshots and sample images
+vision/ambulance.png
+vision/ambulance2.png
+vision/ambulance3.png
+
+
+# Python environments and cache
+venv/
+.venv/
+**/venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+
+# Training datasets and archives
+vision/ambulance_clean/
+vision/ambulance_detection_v3/
+vision/ambulance_detection_v3_clean/
+vision/*.zip
+
+# YOLO training outputs, except the model required by main.py
+vision/runs/*
+!vision/runs/detect/
+vision/runs/detect/*
+!vision/runs/detect/runs/
+vision/runs/detect/runs/*
+!vision/runs/detect/runs/ambulance_experiments/
+vision/runs/detect/runs/ambulance_experiments/*
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/
+vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/*
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/weights/
+vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/weights/*
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/weights/best.pt
+
+# Temporary video and generated files
+*.pyc
+
+
+# Include the exact ambulance model required by vision/main.py
+!vision/runs/
+!vision/runs/detect/
+!vision/runs/detect/runs/
+!vision/runs/detect/runs/ambulance_experiments/
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/weights/
+vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/weights/*
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/weights/best.pt
+
+
+# Dataset archives
+vision/*.zip
+
+# Unneeded model checkpoints
+vision/runs/detect/ambulance/
+vision/runs/detect/train/
+vision/runs/detect/runs/ambulance/
+vision/runs/detect/runs/ambulance_experiments/
+
+# Extra root-level model files
+/be454st.pt
+/besttttt.pt
+
+# Extra model backup
+vision/best_backup.pt
+
+# Force-include the ambulance model required by main.py
+!vision/runs/
+!vision/runs/detect/
+!vision/runs/detect/runs/
+!vision/runs/detect/runs/ambulance_experiments/
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/weights/
+!vision/runs/detect/runs/ambulance_experiments/clean_labels_100e/weights/best.pt
